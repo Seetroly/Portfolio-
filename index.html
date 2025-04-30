@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mon Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #fff;
+      border-bottom: 1px solid #ddd;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1000px;
+      margin: auto;
+      padding: 1rem;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      margin-left: 1rem;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      color: #007acc;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 4rem auto;
+      padding: 0 1rem;
+    }
+
+    h1, h2 {
+      margin-bottom: 1rem;
+      color: #222;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 4rem 1rem;
+    }
+
+    .hero img {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      margin-bottom: 1rem;
+    }
+
+    .skills-list, .projects, .experience {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: #eee;
+      margin-top: 4rem;
+    }
+
+    @media (max-width: 768px) {
+      .skills-list, .projects, .experience {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <div><strong>Mon Portfolio</strong></div>
+      <div>
+        <a href="#accueil">Accueil</a>
+        <a href="#a-propos">À propos</a>
+        <a href="#competences">Compétences</a>
+        <a href="#projets">Projets</a>
+        <a href="#experiences">Expériences</a>
+        <a href="#cv">CV</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <section id="accueil" class="hero">
+    <img src="images/photo-profil.jpg" alt="Photo de profil">
+    <h1>Ton Nom Prénom</h1>
+    <p>Étudiant en BUT Techniques de Commercialisation, passionné par le marketing, l'entrepreneuriat et l'investissement.</p>
+  </section>
+
+  <section id="a-propos">
+    <h2>À propos</h2>
+    <p>Je suis actuellement en BUT TC, avec pour objectif de poursuivre en alternance dans un parcours MDEE. Je suis passionné par le développement de projets ambitieux et je souhaite un jour fonder ma propre entreprise.</p>
+  </section>
+
+  <section id="competences">
+    <h2>Compétences</h2>
+    <div class="skills-list">
+      <div><strong>Marketing</strong><br>Études de marché, communication digitale, marketing opérationnel</div>
+      <div><strong>Outils</strong><br>Canva, Excel, PowerPoint, Notion</div>
+      <div><strong>Langues</strong><br>Français, Anglais (B2)</div>
+      <div><strong>Soft skills</strong><br>Autonomie, curiosité, prise d'initiative</div>
+    </div>
+  </section>
+
+  <section id="projets">
+    <h2>Projets</h2>
+    <div class="projects">
+      <div>
+        <strong>UHA’nniversaire</strong>
+        <p>Organisation d’un événement festif et pédagogique pour les 50 ans de l’UHA.</p>
+      </div>
+      <div>
+        <strong>Concours d’éloquence</strong>
+        <p>Projet personnel et académique sur la prise de parole en public.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="experiences">
+    <h2>Expériences</h2>
+    <div class="experience">
+      <div>
+        <strong>Stage - Entreprise X</strong>
+        <p>Missions en communication et prospection commerciale.</p>
+      </div>
+      <div>
+        <strong>Vidéo promotionnelle - Nasozen</strong>
+        <p>Réalisation d’une vidéo marketing autour d’un produit santé.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="cv">
+    <h2>CV</h2>
+    <p><a href="docs/CV.pdf" target="_blank">Télécharger mon CV (PDF)</a></p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email : ton.email@example.com<br>
+    LinkedIn : <a href="https://linkedin.com/in/tonprofil" target="_blank">tonprofil</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Ton Nom – Portfolio</p>
+  </footer>
+
+</body>
+</html>
